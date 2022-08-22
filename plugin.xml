@@ -156,14 +156,18 @@
             <clobbers target="CameraPopoverHandle" />
          </js-module>
 
-         <header-file src="src/ios/UIImage+CropScaleOrientation.h" />
-         <source-file src="src/ios/UIImage+CropScaleOrientation.m" />
-         <header-file src="src/ios/CDVCamera.h" />
-         <source-file src="src/ios/CDVCamera.m" />
+         <source-file src="src/ios/CameraFlowController.swift" />
+         <resource-file src="src/ios/CameraLocal.xcassets"/>
+         <source-file src="src/ios/CameraPickerInterface.swift" />
+         <source-file src="src/ios/CameraResultFeature.swift" />
+         <source-file src="src/ios/CAShapeLayer+LineHelper.swift" />
+         <source-file src="src/ios/CDVCamera.swift" />
+         <source-file src="src/ios/CDVEditImage.swift" />
+         <header-file src="src/ios/CDVExif.h" />
+         <source-file src="src/ios/CDVImageEditorInterface.swift" />
          <header-file src="src/ios/CDVJpegHeaderWriter.h" />
          <source-file src="src/ios/CDVJpegHeaderWriter.m" />
-         <header-file src="src/ios/CDVExif.h" />
-         <source-file src="src/ios/CAShapeLayer+LineHelper.swift" />
+         <source-file src="src/ios/ChoosePictureController.swift" />
          <source-file src="src/ios/CropRectLayer.swift" />
          <source-file src="src/ios/CropView.swift" />
          <source-file src="src/ios/CropView+DragEvents.swift" />
@@ -173,13 +177,26 @@
          <source-file src="src/ios/ImageEditorController+Flip.swift" />
          <source-file src="src/ios/ImageEditorController+Rotate.swift" />
          <source-file src="src/ios/ImageEditorViewController.swift" />
+         <source-file src="src/ios/MediaWrapper.swift" />
+         <source-file src="src/ios/PermissionsController.swift" />
+         <source-file src="src/ios/PickerViewControllerWrapper.swift" />
+         <source-file src="src/ios/PictureOptions.swift" />
          <source-file src="src/ios/SaveImageURLFeature.swift" />
          <source-file src="src/ios/ScaledImageView.swift" />
+         <source-file src="src/ios/TakePictureController.swift" />
          <source-file src="src/ios/TickLinesRectLayer.swift" />
+         <header-file src="src/ios/UIImage+CropScaleOrientation.h" />
+         <source-file src="src/ios/UIImage+CropScaleOrientation.m" />
+         <source-file src="src/ios/UIImage+DataParse.swift" />
          <source-file src="src/ios/UITraitCollection+Orientation.swift" />
-         <source-file src="src/ios/CDVImageEditorInterface.swift" />
-         <source-file src="src/ios/CDVEditImage.swift" />
-         <resource-file src="src/ios/CameraLocal.xcassets"/>
+         
+         <source-file src="src/ios/Models/OSCMRPictureOptions.swift" />
+         <source-file src="src/ios/OSCMRCamera.swift" />
+         <source-file src="src/ios/OSCMRHandler.swift" />
+         <source-file src="src/ios/OSCMRPermissions.swift" />
+         <source-file src="src/ios/Protocols/OSCMRActionDelegate.swift" />
+         <source-file src="src/ios/Protocols/OSCMRHandlerDelegate.swift" />
+         
          <dependency url="https://github.com/agoncalvesos/cordova-plugin-add-swift-support" id="cordova-plugin-add-swift-support"/>
          <framework src="ImageIO.framework" weak="true" />
          <framework src="CoreLocation.framework" />
