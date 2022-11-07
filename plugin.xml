@@ -92,7 +92,9 @@
              </feature>
              <preference name="CameraUsesGeolocation" value="false" />
          </config-file>
-
+         <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need camera access to take pictures</string>
+        </edit-config>
          <js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">
             <clobbers target="CameraPopoverHandle" />
          </js-module>
